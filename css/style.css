@@ -117,7 +117,7 @@ height: 2rem;
 
 .accordion input:checked + label + .photo {
 height: auto;
-padding: 1%;
+padding: 2%;
 cursor: pointer;
 color: orange;
 }
