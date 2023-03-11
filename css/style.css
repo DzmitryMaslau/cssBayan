@@ -38,14 +38,14 @@ label {
 }
 }
 
-@media (min-width:501px) and (max-width: 1000px) {
+@media (min-width:500px) and (max-width: 1000px) {
   label {
     font-family: Verdana, sans-serif;
     font-size: 0.9em;
   }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 499px) {
     label {
       font-family: Verdana, sans-serif;
       font-size: 0.7em;
