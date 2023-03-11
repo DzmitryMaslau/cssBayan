@@ -1,0 +1,123 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 101vh;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.accordion {
+  background-color: bisque;
+  cursor: pointer;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+@media (min-width: 1000px) {
+.accordion:hover {
+color: blueviolet;
+}
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (min-width: 1000px) {
+label {
+  font-family: Verdana, sans-serif;
+  font-size: 1.2em;
+}
+}
+
+@media (min-width:501px) and (max-width: 1000px) {
+  label {
+    font-family: Verdana, sans-serif;
+    font-size: 0.9em;
+  }
+  }
+
+  @media (max-width: 500px) {
+    label {
+      font-family: Verdana, sans-serif;
+      font-size: 0.7em;
+    }
+    }
+
+
+.icon {
+width: 2rem;
+height: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .icon {
+    width: 1rem;
+    height: 1rem;
+    }
+  }
+
+.accordion label {
+  cursor: pointer;
+  display: block;
+  transition: color 1s;
+}
+
+@media (min-width: 1000px) {
+.accordion label:hover + .photo {
+  height: auto;
+  padding: 1%;
+  transition: 1s;
+  transform: scale(1.2);
+  transition-timing-function: ease-in-out;
+}
+}
+.accordion label:not(:hover) {
+  transition: 1s;
+}
+
+.accordion .photo {
+  width: 60%;
+  margin: 0 auto;
+  height: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.accord {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion input {
+  display: none;
+}
+
+.meme {
+  width: 40%;
+}
+
+.accordion input:checked + label {
+  background-color: burlywood;
+  color: orange;
+}
+
+.accordion input:checked + .acc_head .icon {
+  transform: rotate(180deg);
+  transition: 1s;
+}
+
+.accordion input:checked + label + .photo {
+height: auto;
+padding: 1%;
+cursor: pointer;
+color: orange;
+}
