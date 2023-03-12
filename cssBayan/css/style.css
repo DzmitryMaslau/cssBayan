@@ -70,6 +70,14 @@ label {
 }
 
 @media (min-width: 1000px) {
+.meme:hover {
+  transition: 1s;
+  transform: scale(1.2);
+  transition-timing-function: ease-in-out;
+}
+}
+
+@media (min-width: 1000px) {
   .accordion label:hover + .photo {
     height: auto;
     padding: 1%;
