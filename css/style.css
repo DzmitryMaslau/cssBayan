@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  height: 101vh;
+  overflow-y: scroll;
 }
 
 h1 {
